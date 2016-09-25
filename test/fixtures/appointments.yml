@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dentist_id: 1
+  patient_id: 1
+  date: 2016-09-25
+  begin: 2016-09-25 17:57:18
+  end: 2016-09-25 17:57:18
+  annotation_title: MyString
+  annotation: MyString
+
+two:
+  dentist_id: 1
+  patient_id: 1
+  date: 2016-09-25
+  begin: 2016-09-25 17:57:18
+  end: 2016-09-25 17:57:18
+  annotation_title: MyString
+  annotation: MyString
