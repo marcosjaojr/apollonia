@@ -1,0 +1,18 @@
+%header.main-header
+  %div.pure-menu.pure-menu-horizontal
+    %a{:href => "/", :class=> 'pure-menu-heading header__brand-logo'}
+      Apollonia
+    %ul.pure-menu-list
+      %li.pure-menu-item.pure-menu-has-children.pure-menu-allow-hover
+        %a#menu_link_dentists{:href => "/dentists", :class => 'pure-menu-link'}
+          %i.fa.fa-user-md
+          Destistas
+        %ul.pure-menu-children.main-header__subitem
+          %li.pure-menu-item
+            %a{:href => "/dentists/new", :class => 'pure-menu-link'}
+              %i.fa.fa-plus
+              Criar Novo
+          %li.pure-menu-item
+            %a{:href => "/dentists", :class => 'pure-menu-link'}
+              %i.fa.fa-list
+              Listar Todos

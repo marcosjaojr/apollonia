@@ -1,0 +1,23 @@
+@import "Colors";
+
+.main-header {
+  background-color: $primary_color;
+  line-height: 44px;
+  a {
+    color: $text_color;
+  }
+
+  a:hover {
+    background-color: $dark_primary_color;
+  }
+
+  .main-header__subitem  {
+    background-color: $light_primary_color;
+    a {
+      color: $primary_text;
+      &:hover {
+        color: $text_color;
+      }
+    }
+  }
+}
