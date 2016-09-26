@@ -1,0 +1,23 @@
+@import "Colors";
+
+.pure-button {
+  border-radius: 5px;
+  line-height: 30px;
+  min-width: 100px;
+  border-bottom: 3px solid #ddd;
+}
+
+.submit_button {
+  background-color: $accent_color;
+  color: $text_color;
+}
+
+.button-error {
+  background: rgb(202, 60, 60); /* this is a maroon */
+  color: #fff;
+}
+
+.button-warning {
+  background: rgb(223, 117, 20); /* this is an orange */
+  color: #fff;
+}

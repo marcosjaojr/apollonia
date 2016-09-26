@@ -1,0 +1,22 @@
+@import 'https://fonts.googleapis.com/css?family=Lato|Varela';
+@import "Colors";
+
+// Default body styles
+body {
+  color: $primary_text;
+  background-color: #f6f6f8;
+  font-family: "Varela","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.container {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.centered {
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+<h1>Dentistas</h1>
+<p>Listagem de todos os dentistas cadastrados</p>
+
+<div class="list__table">
+  <table class="pure-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% if !@dentists.blank? %>
+      <% for dentist in @dentists %>
+      <tr>
+        <td>
+          <%= dentist.id %>
+        </td>
+        <td>
+          <h3><%= dentist.name %></h3>
+        </td>
+        <td>
+          <%= link_to "Ver", dentist_path(dentist) %>
+        </td>
+        <td>
+          <%= link_to "Editar", edit_dentist_path(dentist) %>
+        </td>
+        <td>
+          <%= link_to "Apagar", dentist_path(dentist), method: :delete, data: { confirm: 'Você tem certeza que deseja deletar este dentista?' } %>
+        </td>
+      </tr>
+      <% end %>
+      <% else %>
+      <h1>Nenhum dentista encontrado! : (</h1>
+      <% end %>
+    </tbody>
+  </table>
+</div>

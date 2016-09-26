@@ -1,0 +1,8 @@
+<%= form_for @dentist, :html => { :class => "pure-form" } do |f| %>
+  <fieldset class="pure-group">
+    <!-- <%= f.file_field :avatar, placeholder: "Ex: 40hrs/semana", class: "pure-input-1-2" %> -->
+    <%= f.text_field :name, placeholder: "Nome", class: "pure-input-1-2" %>
+    <%= f.text_field :phone, placeholder: "Telefone", class: "pure-input-1-2" %>
+  </fieldset>
+  <%= f.submit "SALVAR", class: "pure-button pure-input-1-2 submit_button" %>
+<% end %>
